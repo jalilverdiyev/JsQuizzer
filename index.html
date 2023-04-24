@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <!-- Fonts start -->
+    <!-- Bruno Ace start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bruno Ace end -->
+    <!-- Roboto start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto end -->
+    <!-- Fonts end -->
+  </head>
+  <body>
+    <div class="container questions">
+      <h2 class="header">Enter your questions</h2>
+      <input
+        type="text"
+        name="question"
+        placeholder="Baku is capital of Azerbaijan"
+        id="question"
+        required
+      />
+      <div class="container actions">
+        <div class="container keys"></div>
+        <div class="container buttons">
+          <button class="btn" id="next" role="button">Add next</button>
+          <button class="btn" id="start" role="button">Start quiz</button>
+        </div>
+      </div>
+    </div>
+    <div class="container answers">
+      <h2 class="header">Now solve the quiz</h2>
+      <div class="container quiz"></div>
+    </div>
+    <script
+      src="./static/js/jquery/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./static/js/script.js"></script>
+  </body>
+</html>
