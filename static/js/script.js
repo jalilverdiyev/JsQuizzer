@@ -56,7 +56,6 @@ $(document).ready(() => {
             removeKeys(index);
             $("#question").val("");
             $('.keys').css('display', 'flex');
-            console.log(questions);
         } else {
             alert("Question can't be empty");
         }
@@ -69,14 +68,12 @@ $(document).ready(() => {
                 questions[index]['keys'].splice(id, 1);
                 element.remove();
                 updateKeys(id);
-                console.log(questions);
             });
         });
     }
 
     updateKeys = (id) => {
         document.querySelectorAll('.key').forEach(element => {
-            console.log(element.id, id);
             if (element.id > id) {
                 element.id--;
             }
@@ -117,7 +114,6 @@ $(document).ready(() => {
             check.addEventListener("click", checkAnswers);
             quiz[0].appendChild(check);
             $(".answers").css("display", "flex");
-            console.log(questions);
         }
     });
 });
